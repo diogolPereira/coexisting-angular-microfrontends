@@ -5,4 +5,8 @@ import { Component } from '@angular/core';
   template: '',
 })
 export class EmptyRouteComponent {
+  ngOnInit() {
+    debugger;
+  }
+
 }

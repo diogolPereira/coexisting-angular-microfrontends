@@ -1,0 +1,38 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    {{ title }}!
+  </h1>
+  <img style="text-align:center" [src]="yoshiUrl" />
+</div>
+
+<!-- <ul>
+  <li>
+    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
+  </li>
+  <li> <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
+  </li>
+  <li>
+    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
+  </li>
+</ul> -->
+
+
+<a [routerLink]="[{ outlets: { sidebar: ['childes'] } }]">
+  Go to sample
+</a>
+
+<br>
+
+<a [routerLink]="['/app2',{ outlets: { sidebar: ['child'] } }]">
+  Go to APP2 WITH SIDEBAR LOAD
+</a>
+<!-- "['/home', { outlets: {'route1':['page1'] -->
+<br>
+
+<a routerLink="/app2">
+  To App 2 from app1
+</a>
+
+<router-outlet name="sidebar"></router-outlet>
+
