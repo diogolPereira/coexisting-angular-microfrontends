@@ -1,0 +1,14 @@
+<p>
+  lazy works!
+</p>
+<br>
+<a [routerLink]="[{outlets:{example:['outlet']}}]">
+  Children with outlet(Broken)
+</a>
+<br>
+<a [routerLink]="['child']">
+  Children without outlet(Works fine)
+</a>
+<br>
+<router-outlet></router-outlet>
+<router-outlet name="example"></router-outlet>

@@ -55,7 +55,7 @@
             return System.import('app2');
           },
           function (location) {
-            return location.pathname.startsWith('/app2');
+            return location.hash.startsWith('#/app2');
           }
         )
 

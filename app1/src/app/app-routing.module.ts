@@ -12,6 +12,9 @@ const routes: Routes = [
     children:[
       {path:'child',component:ChildComponent},
       {path:'outlet',outlet:'example',component:OutletComponent},
+      {path:'lazy',
+      loadChildren:()=>import('./lazy/lazy.module').then(m => m.LazyModule)
+      },
     ]
   },
   { path: '**', component: EmptyRouteComponent },
