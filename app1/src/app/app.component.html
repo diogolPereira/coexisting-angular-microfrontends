@@ -1,5 +1,24 @@
-<a [routerLink]="['app1','lazy']">
-  Go to sample
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+</div>
+
+
+<a [routerLink]="['/app1',{outlets:{example:['outlet']}}]">
+  Children with outlet(Works fine)
+</a>
+<br>
+<a [routerLink]="['/app1','child']">
+  Children without outlet(Works fine)
+</a>
+<br>
+<a routerLink="/app2">
+  To App 2 from app1
 </a>
 
+
 <router-outlet></router-outlet>
+<router-outlet name="example"></router-outlet>
+

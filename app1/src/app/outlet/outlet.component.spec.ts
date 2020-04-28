@@ -3,21 +3,21 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { ChildOutletComponent } from './child-outlet.component';
+import { OutletComponent } from './outlet.component';
 
-describe('ChildOutletComponent', () => {
-  let component: ChildOutletComponent;
-  let fixture: ComponentFixture<ChildOutletComponent>;
+describe('OutletComponent', () => {
+  let component: OutletComponent;
+  let fixture: ComponentFixture<OutletComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ChildOutletComponent ]
+      declarations: [ OutletComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ChildOutletComponent);
+    fixture = TestBed.createComponent(OutletComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
